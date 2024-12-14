@@ -14,16 +14,17 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
 </head>
 <body> 
-    <header>
-        <h1><a href="index.html">flask blog</a></h1>
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1><a href="{{ url_for('home') }}">flask blog</a></h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">home</a></li>
+            <li><a href="{{ url_for('about') }}">about</a></li>
+            <li><a href="{{ url_for('register') }}">sign up</a></li>
+            <li><a href="{{ url_for('login') }}">login</a></li>
+        </ul>
+    </nav>
+</header>
     <main role="main" class="container">
         <div class="row">
           <div class="col-md-8">
