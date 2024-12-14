@@ -1,0 +1,144 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background: #000000;
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+  }
+  
+  header h1 :hover {
+      color:brown;
+    }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+    color: #ffffff;
+  }
+  
+  header nav ul li :hover {
+      color: brown;
+    }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .hero {
+    background: url("https://via.placeholder.com/1920x600") no-repeat center
+      center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 10%;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    background: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  .hero button:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .posts {
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  
+  .post img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .post-content {
+    padding: 20px;
+  }
+  
+  .post-content h3 {
+    margin: 0 0 10px;
+  }
+  
+  .post-content p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  footer {
+    text-align: center;
+    background: #000000;
+    color: #fff;
+    padding: 20px 10%;
+    margin-top: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  }

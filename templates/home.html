@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <section class="hero">
+            <h2>seja bem vindo ao blog!</h2>
+            <p>Discover insights, stories, and ideas to inspire your day.</p>
+            <button>Read More</button>
+        </section>
+    </div>
+
+    {% for post in posts %}
+    <section class="posts">
+        <div class="post">
+            <div class="post-content">
+                <h3>{{ post.title }}</h3>
+                <p>feito por: {{ post.author }} no {{ post.date_posted }}</p>
+                <p>{{ post.content }}</p>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+{% endblock content%}
