@@ -142,3 +142,18 @@ body {
       font-size: 2rem;
     }
   }
+
+  .alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #1d910d;
+}
+
+.alert::danger {
+  background-color: #dc3545; /* Vermelho para erro */
+}
